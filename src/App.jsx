@@ -78,9 +78,9 @@ const App = () => {
               value={`${pagesRead} / ${totalPages}`}
             />
 
-            <Button text="+ Page" onClick={incrementPages} />
+            <Button text="+" onClick={incrementPages} />
 
-            <Button text="- Page" onClick={decrementPages} />
+            <Button text=" -- " onClick={decrementPages} />
           </div>
 
           <div className="tracker">
@@ -89,17 +89,17 @@ const App = () => {
               value={`${chaptersRead} / ${totalChapters}`}
             />
 
-            <Button text="+ Chapter" onClick={incrementChapters} />
+            <Button text=" + " onClick={incrementChapters} />
 
-            <Button text="- Chapter" onClick={decrementChapters} />
+            <Button text=" -- " onClick={decrementChapters} />
           </div>
 
           <div className="tracker">
             <StatisticLine text="Reading Sessions" value={readingSessions} />
 
-            <Button text="+ Session" onClick={incrementSessions} />
+            <Button text=" + " onClick={incrementSessions} />
 
-            <Button text="- Session" onClick={decrementSessions} />
+            <Button text=" -- " onClick={decrementSessions} />
           </div>
 
           <Button text="Reset" onClick={Reset} />
